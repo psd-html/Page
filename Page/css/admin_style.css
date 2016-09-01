@@ -1,0 +1,4 @@
+.tabby-content input, .tabby-content textarea{border-radius: 5px;}
+.tabby-content input[type="submit"]{width: auto}
+.tabby-content textarea {min-height: 50px}
+.tabby-content label{font-style: italic}
