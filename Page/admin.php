@@ -31,7 +31,7 @@ if(!empty($_POST)) {
 	$var['Titre'] =  $plxPlugin->getParam('Titre')=='' ? 'page' : $plxPlugin->getParam('Titre');
 	$var['url'] = $plxPlugin->getParam('url')=='' ? 'page' : $plxPlugin->getParam('url');
 	$mnuPos['mnuPos'] =  $plxPlugin->getParam('mnuPos')=='' ? 2 : $plxPlugin->getParam('mnuPos');
-	$template['template'] = $plxPlugin->getParam('template')=='' ? 'static.php' : $plxPlugin->getParam('template');
+	$template = $plxPlugin->getParam('template')=='' ? 'static.php' : $plxPlugin->getParam('template');
 	
 	# On récupère les templates des pages statiques
 	$files = plxGlob::getInstance(PLX_ROOT.'themes/'.$plxAdmin->aConf['style']);
